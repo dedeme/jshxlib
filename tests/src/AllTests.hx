@@ -6,7 +6,7 @@
 class AllTests {
   static public function main (): Void {
     ExcTests.run();
-/*    B64Tests.run();
+    B64Tests.run();
     CrypTests.run();
     OptTests.run();
     ItTests.run();
@@ -18,6 +18,5 @@ class AllTests {
     RndTests.run();
     StoreTests.run();
     StrTests.run();
-*/
   }
 }
