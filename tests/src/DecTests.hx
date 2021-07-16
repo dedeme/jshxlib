@@ -12,6 +12,7 @@ class DecTests {
 
     t.yes(Dec.eq(Dec.round(0, 0), 0, 0.001));
     t.eq(Dec.to(0, 0), "0");
+    t.eq(Dec.toInt(0), 0);
     t.eq(Dec.toIso(0, 0), "0");
     t.eq(Dec.toEn(0, 0), "0");
     t.yes(Dec.eq(Opt.get(Dec.from("0")), 0, 0.001));
@@ -20,6 +21,7 @@ class DecTests {
 
     t.yes(Dec.eq(Dec.round(-0, 0), 0, 0.001));
     t.eq(Dec.to(-0, 0), "0");
+    t.eq(Dec.toInt(-0), -0);
     t.eq(Dec.toIso(-0, 0), "0");
     t.eq(Dec.toEn(-0, 0), "0");
     t.yes(Dec.eq(Opt.get(Dec.from("-0")), 0, 0.001));
@@ -46,6 +48,7 @@ class DecTests {
 
     t.yes(Dec.eq(Dec.round(-3.245, 2), -3.25, 0.000001));
     t.eq(Dec.to(-3.245, 2), "-3.25");
+    t.eq(Dec.toInt(-3.245), -3);
     t.eq(Dec.toIso(-3.245, 2), "-3,25");
     t.eq(Dec.toEn(-3.245, 2), "-3.25");
     t.yes(Dec.eq(Opt.get(Dec.from("-3.245")), -3.245, 0.000001));
@@ -100,6 +103,7 @@ class DecTests {
 
     t.yes(Dec.eq(Dec.round(16234125.124, 0), 16234125, 0.000001));
     t.eq(Dec.to(16234125.124, 0), "16234125");
+    t.eq(Dec.toInt(16234125.124), 16234125);
     t.eq(Dec.toIso(16234125.124, 0), "16.234.125");
     t.eq(Dec.toEn(16234125.124, 0), "16,234,125");
     t.yes(Dec.eq(Opt.get(
