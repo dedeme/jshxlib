@@ -288,8 +288,7 @@ class Ui {
 
   /// Create a select with list as entries. Every option has an id formed with
   /// 'idPrefix' + "_" + 'its list name' and a name equals to 'idPrefix'.
-
-  /// Also select widget has name 'idPrefix' too.
+  /// The select widget has also the name 'idPrefix'.
   ///   idPrefix : Prefix to make option id.
   ///   list     : Entries of select. Default selected goes marked with '+'
   ///     (e.g. ["1", "+2", "3"])
